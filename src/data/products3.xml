@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Products>
+    <Product id="9">
+        <Name>banana</Name>
+        <Category>fruit</Category>
+        <PartNumberNR>2303-E1A-G-M-CCCC4-VM</PartNumberNR>
+        <CompanyName>FruitsAll</CompanyName>
+        <Active>true</Active>
+    </Product>
+</Products>

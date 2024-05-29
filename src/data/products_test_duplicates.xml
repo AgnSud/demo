@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Products>
+    <Product id="3">
+        <Name>chair</Name>
+        <Category>furniture</Category>
+        <PartNumberNR>E1A-G-M-W209B-VM</PartNumberNR>
+        <CompanyName>Ikeaa</CompanyName>
+        <Active>true</Active>
+    </Product>
+    <Product id="4">
+        <Name>desk</Name>
+        <Category>furniture</Category>
+        <PartNumberNR>J1A-G-M-W982F-PO</PartNumberNR>
+        <CompanyName>Ikeaa</CompanyName>
+        <Active>false</Active>
+    </Product>
+    <Product id="5">
+        <Name>lamp</Name>
+        <Category>furniture</Category>
+        <PartNumberNR>E7R-Q-M-K287B-YH</PartNumberNR>
+        <CompanyName>Ikeaa</CompanyName>
+        <Active>true</Active>
+    </Product>
+</Products>
