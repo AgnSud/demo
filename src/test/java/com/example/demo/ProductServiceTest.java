@@ -33,13 +33,15 @@ public class ProductServiceTest {
 
     @Test
     public void testReadProductsFromXml_NoDuplicates() throws IOException, DuplicatePartNumberException {
-        String filename = "src/data/products_test_no_duplicates.xml"; // Ensure this path is correct
+        String filename = "src/data/products_test_no_duplicates.xml";
         String filePath = System.getProperty("user.dir") + File.separator + filename;
 
         XmlMapper xmlMapper = new XmlMapper();
         ProductsWrapper productsWrapper = xmlMapper.readValue(new File(filePath), ProductsWrapper.class);
 
         when(productRepository.findAll()).thenReturn(List.of());
+
+        List<Product> result = productService.readProductsFromXml(filename);
 
         ArgumentCaptor<List<Product>> argumentCaptor = ArgumentCaptor.forClass(List.class);
         verify(productRepository, times(1)).saveAll(argumentCaptor.capture());
